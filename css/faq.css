@@ -1,0 +1,45 @@
+.faq__item {
+	background-color: #fff;
+	color: #1C1A1A;
+	font-weight: 700;
+	font-size: 24px;
+	padding: 20px 70px;
+	margin-bottom: 20px;
+	list-style: none;
+}
+
+.faq__item:nth-child(even) {
+	background-color: #440f51;
+	color: #fff;
+}
+
+.faq__item:nth-child(odd)::after {
+	content: "";
+	background-image: url(../image/icons/open-purple.svg);
+	background-size: contain;
+	display: inline-block;
+	width: 46px;
+	height: 46px;
+
+}
+
+.faq__item:nth-child(even)::after {
+	content: "";
+	background-image: url(../image/icons/open.svg);
+	background-size: contain;
+	display: inline-block;
+	width: 46px;
+	height: 46px;
+
+
+}
+
+.faq__item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.faq__text {
+	font-size: 24px;
+}
